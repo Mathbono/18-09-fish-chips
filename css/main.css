@@ -1,0 +1,161 @@
+@charset "UTF-8";
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	margin: 0;
+	background-color: #87c8c5;
+	background-image: url("img/fond.png");
+	min-width: 400px;
+	hyphens: auto;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+}
+header {
+	margin-top: 50px;
+	border: #2b9aa0 5px solid;
+	background-color: #34b1b2;
+	text-align: center;
+	color: white;
+}
+header h1 {
+	margin: 20px 0;
+}
+header nav a {
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	text-transform: capitalize;
+	font-size: 2rem;
+	margin: 0 20px 20px 0;
+}
+header nav {
+	margin: 10px 0 20px;
+	font-family: 'Slabo 27px', serif;
+}
+main {
+	font-size: 1.4rem;
+}
+.welcome {
+	text-align: center;
+	max-width: 45%;
+	margin: 0 auto;
+}
+h1, h2, h3, h4 {
+	font-family: 'Slabo 27px', serif;
+}
+h1 {
+	margin-top: 30px;
+}
+h5 {
+	color: white;
+}
+.general {
+	margin-top: 40px;
+}
+.special {
+	background-color: #b6dedc;
+	max-width: 45%;
+	float: left;
+	margin-left: 150px;
+}
+.special h2 {
+	text-align: center;
+	font-size: 2em;
+}
+.special h2 .halfTitle {
+	color: #2b9aa0;
+}
+article h3 {
+	text-align: center;
+}
+.special article img {
+	border-radius: 100px;
+	margin: 0 10px 0 20px;
+}
+.special article p {
+	margin: 0 10px 10px 20px;
+}
+.special article a {
+	text-decoration: none;
+	color: white;
+	background-color: #2b9aa0;
+	padding: 10px;
+	float: right;
+	margin: 20px;
+}
+.news {
+	background-color: #34b1b2;
+	border: #2b9aa0 5px solid;
+	max-width: 25%;
+	float: right;
+	position: relative;
+	margin-right: 150px;
+	padding: 0 5px;
+}
+.news img {
+	position: absolute;
+	top: -40px;
+	left: auto;
+	bottom: auto;
+	right: -40px;
+}
+.news h5 {
+	color: #8ed0ce;
+}
+.news p {
+	color: white;
+}
+.news h4, .news h5, .news p {
+	margin-left: 10px;
+}
+.crusty, .multi {
+	max-width: 50%;
+}
+.crusty img, .multi img {
+	float: left;
+}
+.crusty {
+	float: left;
+}
+.multi {
+	float: right;
+}
+.middleTitle {
+	color: #b6dedc;
+}
+footer {
+	text-align: center;
+	margin: 50px 100px 0;
+	font-size: 1.5rem;
+}
+@media all and (max-width: 1200px) {
+
+	.special {
+		margin-left: 100px;
+	}
+	.news {
+		margin-right: 100px;
+	}
+}
+@media all and (max-width: 800px) {
+
+	.special {
+		margin-left: 50px;
+	}
+	.news {
+		margin-right: 50px;
+	}
+}
